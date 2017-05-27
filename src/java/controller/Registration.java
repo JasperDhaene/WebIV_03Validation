@@ -8,13 +8,13 @@ import validator.ValidEmail;
 
 public class Registration {
 
-    @Pattern(regexp = "^[a-zA-Z]+", message = "username must be alphanumeric with no spaces")
+    
     private String userName;
 
-    @Size(min = 4, max = 20)
+    
     private String password;
 
-    @NotEmpty
+    
     private String confirmPassword;
 
     @ValidEmail

@@ -26,11 +26,6 @@
                 <form:password path="confirmPassword" size = "20"/>&nbsp;
                 <form:errors path="confirmPassword" cssClass="error"/>
             </p>
-            <p class="note">Note: Slides are unclear here.<br>
-                They say both @ModelAttribute and @Valid can be used to inject the fields of this form into processRegistration() of the RegistrationController.<br>
-                This is not true though. With @ModelAttribute (as it is now), all annotations for validation (so including our custom @ValidEmail) will be ignored!<br>
-                This is not a problem for the other fields, because they are validated in the controller with registrationValidation.validate(). Try this by submitting the form with an empty email. The next commit will contain the correct code.
-            </p>
             <p><label>Email:</label>
                 <form:input path="email" size = "20"/>&nbsp;
                 <form:errors path="email" cssClass="error"/>
