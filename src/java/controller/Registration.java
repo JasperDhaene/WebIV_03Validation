@@ -17,9 +17,7 @@ public class Registration {
     @NotEmpty
     private String confirmPassword;
 
-    @NotEmpty
-    @Email
-    //@ValidEmail
+    @ValidEmail
     private String email;
 
     public String getUserName() {
